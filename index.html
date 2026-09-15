@@ -132,7 +132,7 @@ header.mast{background:var(--canvas);padding:1.7rem 0 0.3rem;}
 .prod-list-item .pli-arrow{color:var(--muted-soft);font-size:0.9rem;}
 .prod-list-item.active .pli-arrow{color:var(--brand-orange);}
 .prod-list-empty{padding:1.4rem 1.2rem;text-align:center;color:var(--muted-soft);font-size:0.88rem;}
-.step-placeholder{border:1.5px dashed var(--hairline);border-radius:6px;padding:2.2rem 1.4rem;text-align:center;color:var(--muted-soft);font-size:0.92rem;background:var(--surface-subtle);}
+.step-placeholder{border:1px dashed var(--hairline);border-radius:6px;padding:0.9rem 1.1rem;text-align:center;color:var(--muted-soft);font-size:0.85rem;background:var(--surface-subtle);}
 .step-placeholder b{color:var(--muted);}
 
 /* ---------- Content area ---------- */
@@ -658,7 +658,7 @@ function renderContent(){
   const area = document.getElementById('content-area');
   const p = PRODUCTS.find(x=>x.id===selectedId);
   if(!p){
-    area.innerHTML = `<div class="step-placeholder">위에서 <b>메뉴 버튼</b>을 눌러 상품 목록을 확인한 뒤, <b>상품</b>을 선택하면<br>가입대상·한도·세제혜택은 물론 개요·특징·투자자 적합도까지 상세 정보가 여기에 표시됩니다.</div>`;
+    area.innerHTML = `<div class="step-placeholder">상품을 선택하면 상세 정보가 표시됩니다.</div>`;
     return;
   }
   area.innerHTML = `
